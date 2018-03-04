@@ -1,10 +1,23 @@
 /*heading section*/
-.heading {
-	height: 100px;
+.header {
+	height: 80px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+
+.header-content {
+	width: 100%;
 	font-size: 24px;
 	text-align: center;
-	margin-top: 20px;
+	position: absolute;
+	bottom: 0;
 }
+
+#city {
+	font-size: 30px;
+}
+
 /*search bar section*/
 .searchbar {
 	text-align: center;
@@ -12,16 +25,19 @@
 }
 
 input {
-	width: 278px;
-	height: 30px;
+	width: 322px;
+	height: 32px;
 	border: solid grey 1px;
+	border-radius: 1px;
+	padding: 5px;
 	margin-bottom: 15px;
 }
 
 button {
-	width: 90px;
-	height: 40px;
+	width: 105px;
+	height: 38px;
 	border-radius: 5px;
+	font-size: 22px;
 }
 
 .buttons {
@@ -34,11 +50,11 @@ button {
 }
 
 .weather_title{
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .daily {
-	width: 65px;
+	width: 70px;
 	display: inline-block;
 	padding-top: 15px;
 
@@ -47,3 +63,4 @@ button {
 .weather_logo{
 	width: 50px;
 }
+/*results section*/
