@@ -1,4 +1,4 @@
-# Cit-Discover-API-Capstone
+# City-Discover-API-Capstone
 Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with YouTube API
 
 ![landing page] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_landing_page.png)
@@ -8,21 +8,17 @@ Thinkful (https://www.thinkful.com) First Capstone Project - App integrating wit
 ![overlay for youtube] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_youtube.png)
 
 ## Background
-I really like sweet, delicious coffee and thought it would be interesting to see what kinds of coffee drinks are available around the world.
+When I'm traveling to a new city the typical things I look for are local food/restaurants, sights, and shopping areas. I also would like to know the current weather conditions before going out so I can dress accordingly. 
 
 ## Use Case
-This app includes 20 different coffee drinks from different countries. A person can read through the descriptions, view the images and choose a coffee. An overlay will then show where the coffee can be found, two YouTube videos on how to make it and some coffee trivia from Wikipedia.
+This app uses information from foursquare to display venue information and photos near the location provided in the search. The app includes a weather app to display the 5 day forcast for the same city. 
 
-## Working Prototype
-You can access a working prototype of the app here: https://kimcheru18.github.io/coffee-search-wikipedia-api-capstone/
+<!-- ## Working Prototype
+You can access a working prototype of the app here: -->
 
 ## Functionality
 The app's functionality includes:
-* The option to select one of 20 coffee drinks.
-* The app returns a google map indicating what country the coffee originates from.
-* The app returns 2 YouTube video tutorials on how to make the selected coffee.
-* The app returns coffee trivia from Wikipedia.
-* A 'Try another flavor' button that takes one back to the main screen.
+Type in the city of interest and return local weather 5 day weather information. It will also be able to tab through food, sights, and shops. 
 
 ## Technology
 * HTML
@@ -30,7 +26,7 @@ The app's functionality includes:
 * JavaScript
 * jQuery
 
-The app uses AJAX JSON calls to the <a href="https://www.googleapis.com/youtube/v3/search">YouTube Videos</a>Open Platform API to return YouTube results.
+<!-- The app uses AJAX JSON calls to the <a href="https://www.googleapis.com/youtube/v3/search">YouTube Videos</a>Open Platform API to return YouTube results.
 The app uses AJAX JSON calls to the <a href="https://en.wikipedia.org/w/api.php">Wiki Trivia</a>Open Platform API to return Wikipedia results.
 
 
@@ -40,4 +36,4 @@ App is built to be responsive across mobile, tablet, laptop, and desktop screen 
 ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
 * Add list of cafe's where visiter can find these coffees
-* Add comment section for visiter to comment on their favorite coffee flavors or recommend other coffee types and cafe's
+* Add comment section for visiter to comment on their favorite coffee flavors or recommend other coffee types and cafe's -->
