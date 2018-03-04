@@ -5,19 +5,77 @@
     <meta name="viewport" content="width=device-width">
     <title>City Discover</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="grid.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
   	<div class="row">
-  		<div class="grid_12">
+  		<div class="col-12 heading">
   			<h1>City Discover</h1>
+  			<p>Enter the city of interest</p>
   		</div>
   	</div>
-  	<form>
-	  	<input role="textbox" placeholder="Search City.." type="text" name="search">
-	  	<button>Food</button>
-	  	<button>Sights</button>
-	  	<button>Shopping</button>
-  	</form>
+  	<div class="row">
+	  	<div class="col-12 searchbar">
+		  	<form>
+			  	<input role="textbox" placeholder="Search City.." type="text" name="search">
+			  	<div class="buttons">
+				  	<button>Food</button>
+				  	<button>Sights</button>
+				  	<button>Shopping</button>
+			  	</div>
+		  	</form>
+	  	</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-12 weather">
+  			<h2><span class="weather_title">5 Day Weather</span></h2>
+  			<div class="daily">
+  				<div class="day 1">
+  				<h3>Sat</h3>
+  				<img class="weather_logo" src="C:\Users\Fulin\Documents\Thinkful\Projects\city-discover-api-capstone\images\partly_cloudy.png"/ alt="weather.img">
+  				<p>56 F</p>
+  				<p>25 F</p>
+  				</div>	
+  			</div>
+  			<div class="daily">
+  				<div class="day 2">
+  				<h3>Sun</h3>
+  				<img class="weather_logo" src="C:\Users\Fulin\Documents\Thinkful\Projects\city-discover-api-capstone\images\partly_cloudy.png"/ alt="weather.img">
+  				<p>90 F</p>
+  				<p>25 F</p>
+  				</div>	
+  			</div>
+  			<div class="daily">
+  				<div class="day 3">
+  				<h3>Mon</h3>
+  				<img class="weather_logo" src="C:\Users\Fulin\Documents\Thinkful\Projects\city-discover-api-capstone\images\partly_cloudy.png"/ alt="weather.img">
+  				<p>56 F</p>
+  				<p>25 F</p>
+  				</div>	
+  			</div>
+  			<div class="daily">
+  				<div class="day 4">
+  				<h3>Tues</h3>
+  				<img class="weather_logo" src="C:\Users\Fulin\Documents\Thinkful\Projects\city-discover-api-capstone\images\partly_cloudy.png"/ alt="weather.img">
+  				<p>66 F</p>
+  				<p>33 F</p>
+  				</div>	
+  			</div>
+  			<div class="daily">
+  				<div class="day 5">
+  				<h3>Wed</h3>
+  				<img class="weather_logo" src="C:\Users\Fulin\Documents\Thinkful\Projects\city-discover-api-capstone\images\partly_cloudy.png"/ alt="weather.img">
+  				<p>101 F</p>
+  				<p>25 F</p>
+  				</div>	
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-4 results">
+  		
+  		</div>
+  	</div>	
     <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </body>
