@@ -1,6 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+	box-sizing: border-box;
+	font-family: Sans-Serif;
+	/*reset Chrome user agent styles*/
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-before: 0px;
+	-webkit-padding-after: 0px;
+	-webkit-padding-start: 0px;
+	-webkit-padding-end: 0px;
+	/*reset Firefox user agent styles*/
+	-moz-margin-before: 0px;
+	-moz-margin-after: 0px;
+	-moz-margin-start: 0px;
+	-moz-margin-end: 0px;
+	-moz-padding-before: 0px;
+	-moz-padding-after: 0px;
+	-moz-padding-start: 0px;
+	-moz-padding-end: 0px;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 /*heading section*/
 .header {
-	height: 80px;
+	height: 60px;
 	position: relative;
 	margin-top: 20px;
 	margin-bottom: 12px;
@@ -46,21 +77,66 @@ button {
 /*weather section*/
 .weather {
 	text-align: center;
-	padding: 15px;
+	margin-bottom: 18px
 }
 
-.weather_title{
-	font-size: 24px;
+#weather_title{
+	font-size: 22px;
+	margin-bottom: 15px;
+	margin-top: 10px;
 }
 
 .daily {
-	width: 70px;
+	width: 18.5%;
 	display: inline-block;
-	padding-top: 15px;
-
+	margin: 0 auto;
 }
 
 .weather_logo{
 	width: 50px;
 }
 /*results section*/
+.results {
+
+}
+
+.container_results{
+	height: 425px;
+	border: 1px solid grey;
+	border-radius: 4px;
+	padding: 12px;
+}
+
+.venue_name{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.venue_image { 
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+ }
+
+ .venue_category {
+ 	margin: 5px;
+ 	height: 35px;
+ }
+
+.venue_category_logo {
+	display: inline-block;
+	height: 28px;
+	float: left;
+}
+
+.venue_category_name {
+	display: flex;
+	align-items: center;
+	height: inherit;
+	font-weight: 600;
+	padding: 5px;
+}
+.venue_address {
+	margin: 5px;
+}
