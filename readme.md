@@ -1,11 +1,7 @@
 # City-Discover-API-Capstone
 Thinkful (https://www.thinkful.com) First Capstone Project - App integrating with YouTube API
 
-![landing page] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_landing_page.png)
-
-![overlay for googlemaps] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_google-map.png)
-
-![overlay for youtube] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_youtube.png)
+<!-- ![landing page] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_landing_page.png) -->
 
 ## Background
 When I'm traveling to a new city the typical things I look for are local food/restaurants, sights, and shopping areas. I also would like to know the current weather conditions before going out so I can dress accordingly. 
@@ -13,8 +9,8 @@ When I'm traveling to a new city the typical things I look for are local food/re
 ## Use Case
 This app uses information from foursquare to display venue information and photos near the location provided in the search. The app includes a weather app to display the 5 day forcast for the same city. 
 
-<!-- ## Working Prototype
-You can access a working prototype of the app here: -->
+## Working Prototype
+You can access a working prototype of the app here: (https://fulin426.github.io/city-discover-api-capstone)
 
 ## Functionality
 The app's functionality includes:
