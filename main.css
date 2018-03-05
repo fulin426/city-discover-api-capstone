@@ -55,12 +55,13 @@ body {
 	padding-bottom: 15px;
 }
 
-input {
+#search-input {
 	width: 322px;
 	height: 32px;
 	border: solid grey 1px;
 	border-radius: 1px;
 	padding: 5px;
+	margin-top: 10px;
 	margin-bottom: 15px;
 }
 
@@ -97,7 +98,8 @@ button {
 }
 /*results section*/
 .results {
-
+margin-top: 5px;
+margin-bottom: 5px;
 }
 
 .container_results{
