@@ -38,7 +38,11 @@ function displayFoodResults(result) {
             <a href="${result.venue.url}" target="_blank">${result.venue.name}</a>
           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div class="venue_image" style="background-image: url(https://igx.4sqi.net/img/general/width960${result.venue.photos.groups[0].items[0].suffix})" ;>
+=======
+          <div class="result-image venue_image" style="background-image: url(https://igx.4sqi.net/img/general/width960${result.venue.photos.groups[0].items[0].suffix})" ;>
+>>>>>>> faa5fcb90a08515cc2436ac890f5d805e087a6e8
 =======
           <div class="result-image venue_image" style="background-image: url(https://igx.4sqi.net/img/general/width960${result.venue.photos.groups[0].items[0].suffix})" ;>
 >>>>>>> faa5fcb90a08515cc2436ac890f5d805e087a6e8
