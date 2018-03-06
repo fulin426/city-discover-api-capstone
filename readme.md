@@ -9,6 +9,11 @@ When I'm traveling to a new city the typical things I look for are local food/re
 ## Use Case
 This app uses information from foursquare to display venue information and photos near the location provided in the search. The app includes a weather app to display the 5 day forcast for the same city. 
 
+## User Stories
+As a vistor I want to search by a city name in order to find out the weather, food, shops, and sights.
+
+![User Stories](https://github.com/fulin426/city-discover-api-capstone/blob/master/images/user-stories.jpg)
+
 ## Working Prototype
 You can access a working prototype of the app here: (https://fulin426.github.io/city-discover-api-capstone)
 
