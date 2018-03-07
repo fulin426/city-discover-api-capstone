@@ -99,8 +99,8 @@ button {
 }
 /*results section*/
 .results {
-margin-top: 5px;
-margin-bottom: 5px;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 
 .container_results{
@@ -140,11 +140,13 @@ margin-bottom: 5px;
 	padding-left: 8px
 }
 .venue_address {
+	font-size: 15px;
+	overflow: hidden;
 	margin: 5px;
 }
 
 .more_results {
-	margin-top: 15px;
+	margin-top: 25px;
 	margin-bottom: 15px;
 	display: flex;
 	justify-content: center;
