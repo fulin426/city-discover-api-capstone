@@ -91,14 +91,24 @@ button {
 	margin-top: 10px;
 }
 
+.weather_result{
+	display: inline-block;
+}
+
 .daily {
 	width: 18.5%;
 	display: inline-block;
 	margin: 0 auto;
 }
 
-.weather_logo{
+.weather_logo {
 	width: 50px;
+}
+.temp_result {
+	margin: 8px;
+}
+#temp_min {
+	color: #808080;
 }
 /*results section*/
 

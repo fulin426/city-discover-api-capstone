@@ -1,7 +1,8 @@
 //Define global variables, functions, and objects
 const FOURSQUARE_SEARCH_URL = 'https://api.foursquare.com/v2/venues/explore';
+const OPENWEATHERMAP_SEARCH_URL = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece';
 
-function searchRecommendations(city, sectionCategory) {
+function searchRecommendations(city, category) {
   const settings = {
     url: FOURSQUARE_SEARCH_URL,
     data: {
@@ -9,7 +10,7 @@ function searchRecommendations(city, sectionCategory) {
       client_secret: 'UIYIKPU1WY132RBMKBFSZVGFMNP30PPJXCJPR4MLJFVZAPNM',
       query: 'recommended',
       near: `${city}`,
-      section: `${sectionCategory}`,
+      section: `${category}`,
       v: 20180301,
       radius: 100000,
       venuePhotos: 1,
@@ -19,8 +20,8 @@ function searchRecommendations(city, sectionCategory) {
     type: 'GET',
     success: function(data) {
               try {
-                  let results = data.response.groups[0].items.map (function (item, index) {
-                    return displayResults(item);
+                  let results = data.response.groups[0].items.map(function (item, index) {
+                    return displayRecommendations(item);
                   });
                   $('.results').html(results);
             } catch (e) {
@@ -34,7 +35,7 @@ function searchRecommendations(city, sectionCategory) {
     $.ajax(settings);
 }
 
-function displayResults(result) {
+function displayRecommendations(result) {
     return `      
       <div class="col-4">
         <div class="container_results">
@@ -51,8 +52,38 @@ function displayResults(result) {
           <p class="venue_address">${result.venue.location.formattedAddress[2]}</p>
           <p class="venue_address">${result.venue.contact.formattedPhone}</p>
         </div>
-      </div>`
+      </div>`;
 }
+
+function searchWeather(city) {
+  const settings = {
+    url: OPENWEATHERMAP_SEARCH_URL,
+    data: {
+      units: 'imperial',
+      q: `${city}`,
+/*      cnt: 5,*/
+    },
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {
+              let results = displayWeather(data);
+              $('.weather_result').html(results);
+            }
+    };        
+    $.ajax(settings);
+}
+function displayWeather(data) {
+  return `
+          <div class="day">
+            <h3>${data.city.name}</h3>
+            <img class="weather_logo" src="http://openweathermap.org/img/w/10n.png" alt="weather.png">
+            <p id="temp_max" class ="temp_result">${Math.round(data.list[0].main.temp_max)}°F</p>
+            <p id="temp_min" class ="temp_result">${Math.round(data.list[0].main.temp_min)}°F</p>
+          </div>  
+        </div>
+      </div>`;
+}
+
 
 //Use global variables, functions, and objects (triggers)
 $('.food').on('click', function(event) {
@@ -60,7 +91,7 @@ $('.food').on('click', function(event) {
 	let query = $('#search-input').val();
   let category = 'food';
 	if (query === '') {alert('Please Enter a City')}
-		else {searchRecommendations(query, category)}
+		else {searchRecommendations(query, category); searchWeather(query)}
 });
 
 $('.sights').on('click', function(event) {
@@ -79,4 +110,4 @@ $('.shops').on('click', function(event) {
 		else {searchRecommendations(query, category)}
 });
 
-// Open Weather Map key ac32d19346bf21abaa933d02472c8ece
+
