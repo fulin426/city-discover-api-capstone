@@ -1,6 +1,6 @@
 //Define global variables, functions, and objects
 const FOURSQUARE_SEARCH_URL = 'https://api.foursquare.com/v2/venues/explore';
-const OPENWEATHERMAP_SEARCH_URL = 'http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece';
+const OPENWEATHERMAP_SEARCH_URL = 'https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece';
 
 function searchRecommendations(city, category) {
   const settings = {
