@@ -124,7 +124,7 @@ button {
 .container_results{
 	border: 1px solid grey;
 	border-radius: 4px;
-	padding: 12px;
+	padding: 14px;
 	overflow: hidden;
    	white-space: nowrap;
    	text-overflow: ellipsis;
@@ -140,6 +140,7 @@ button {
 	width: 100%;
 	margin-top: 8px;
 	margin-bottom: 8px;
+	border-radius: 6px;
  }
 
 .venue_category {
