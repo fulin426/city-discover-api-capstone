@@ -69,8 +69,10 @@ button {
 	width: 105px;
 	height: 38px;
 	border-radius: 5px;
+	color: white;
 	font-size: 22px;
-	background-color: grey;
+	font-weight: 500;
+	background-color: #339933;
 }
 
 .buttons {
@@ -98,21 +100,20 @@ button {
 	width: 50px;
 }
 /*results section*/
-.results {
-margin-top: 15px;
-margin-bottom: 15px;
-}
 
 .container_results{
 	border: 1px solid grey;
 	border-radius: 4px;
 	padding: 12px;
+	overflow: hidden;
+   	white-space: nowrap;
+   	text-overflow: ellipsis;
 }
 
 .venue_name{
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
-	padding: 5px;
+	margin-bottom: 5px;
 }
 
 .venue_image { 
