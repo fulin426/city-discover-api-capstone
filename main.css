@@ -47,7 +47,7 @@ body {
 }
 
 #city {
-	font-size: 30px;
+	font-size: 38px;
 }
 
 /*search bar section*/
@@ -124,7 +124,7 @@ button {
 .container_results{
 	border: 1px solid grey;
 	border-radius: 4px;
-	padding: 14px;
+	padding: 12px;
 	overflow: hidden;
    	white-space: nowrap;
    	text-overflow: ellipsis;
