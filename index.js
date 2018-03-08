@@ -18,12 +18,18 @@ function searchRecommendations(city, sectionCategory) {
     dataType: 'json',
     type: 'GET',
     success: function(data) {
-              console.log(data);
-              let results = data.response.groups[0].items.map (function (item, index) {
-                return displayResults(item);
-              });
-              $('.results').html(results);
+              try {
+                  let results = data.response.groups[0].items.map (function (item, index) {
+                    return displayResults(item);
+                  });
+                  $('.results').html(results);
+            } catch (e) {
+                  $('.results').html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
             }
+          },
+          error: function() {
+            $('.results').html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
+          }
     };        
     $.ajax(settings);
 }
@@ -73,4 +79,4 @@ $('.shops').on('click', function(event) {
 		else {searchRecommendations(query, category)}
 });
 
-// $('#search-input').val('');
+// Open Weather Map key ac32d19346bf21abaa933d02472c8ece

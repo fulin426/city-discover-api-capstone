@@ -28,6 +28,7 @@
 body {
 	max-width: 1000px;
 	margin: 0 auto;
+	background-color: #F8F8F8;
 }
 /*heading section*/
 .header {
@@ -142,19 +143,7 @@ button {
 }
 .venue_address {
 	font-size: 15px;
-	overflow: hidden;
 	margin: 5px;
-}
-
-.more_results {
-	margin-top: 25px;
-	margin-bottom: 15px;
-	display: flex;
-	justify-content: center;
-}
-
-#more_results_button {
-	width: 150px;
 }
 
 .result-image {
@@ -165,4 +154,10 @@ button {
     margin-bottom: 1rem;
     background-size: cover;
     background-position: center center;
+}
+
+.error_result {
+	text-align: center;
+	font-size: 22px;
+	margin: 15px;
 }
