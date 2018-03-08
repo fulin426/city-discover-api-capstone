@@ -1,6 +1,6 @@
 //Define global variables, functions, and objects
 const FOURSQUARE_SEARCH_URL = 'https://api.foursquare.com/v2/venues/explore';
-const OPENWEATHERMAP_SEARCH_URL = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece';
+const OPENWEATHERMAP_SEARCH_URL = 'http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece';
 
 function searchRecommendations(city, category) {
   const settings = {
@@ -74,12 +74,11 @@ function searchWeather(city) {
 }
 function displayWeather(data) {
   return `
-          <div class="day">
-            <h3>${data.city.name}</h3>
-            <img class="weather_logo" src="http://openweathermap.org/img/w/10n.png" alt="weather.png">
-            <p id="temp_max" class ="temp_result">${Math.round(data.list[0].main.temp_max)}°F</p>
-            <p id="temp_min" class ="temp_result">${Math.round(data.list[0].main.temp_min)}°F</p>
-          </div>  
+            <h3 id="weather_title">${data.name}</h3>
+            <img class="weather_logo" src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="weather.png">
+            <p id="temp_max" class ="temp_result">${Math.round(data.main.temp_max)}°F</p>
+            <p id="temp_min" class ="temp_result">${Math.round(data.main.temp_min)}°F</p> 
+            <p  id="weather_description">${data.weather[0].main}</p>
         </div>
       </div>`;
 }
@@ -99,7 +98,7 @@ $('.sights').on('click', function(event) {
 	let query = $('#search-input').val();
   let category = 'sights';
 	if (query === '') {alert('Please Enter a City')}
-		else {searchRecommendations(query, category)}
+		else {searchRecommendations(query, category); searchWeather(query)}
 });
 
 $('.shops').on('click', function(event) {
@@ -107,7 +106,7 @@ $('.shops').on('click', function(event) {
 	let query = $('#search-input').val();
   let category = 'shops';
 	if (query === '') {alert('Please Enter a City')}
-		else {searchRecommendations(query, category)}
+		else {searchRecommendations(query, category); searchWeather(query)}
 });
 
 

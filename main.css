@@ -74,6 +74,7 @@ button {
 	font-size: 22px;
 	font-weight: 500;
 	background-color: #339933;
+	cursor:pointer;
 }
 
 .buttons {
@@ -86,13 +87,15 @@ button {
 }
 
 #weather_title{
-	font-size: 22px;
-	margin-bottom: 15px;
-	margin-top: 10px;
+	font-size: 24px;
+	font-weight: 500;
+	margin: 8px;
 }
 
 .weather_result{
 	display: inline-block;
+	width: 180px;
+	text-align: center;
 }
 
 .daily {
@@ -102,10 +105,16 @@ button {
 }
 
 .weather_logo {
-	width: 50px;
+	width: 90px;
+	margin-left: 10px;
+	float: right;
 }
+
+#weather_description {
+}
+
 .temp_result {
-	margin: 8px;
+	margin: 5px;
 }
 #temp_min {
 	color: #808080;
