@@ -61,7 +61,6 @@ function searchWeather(city) {
     data: {
       units: 'imperial',
       q: `${city}`,
-/*      cnt: 5,*/
     },
     dataType: 'json',
     type: 'GET',
