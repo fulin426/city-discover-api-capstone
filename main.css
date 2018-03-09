@@ -57,10 +57,10 @@ body {
 }
 
 #search-input {
-	width: 322px;
+	width: 325px;
 	height: 32px;
 	border: solid grey 1px;
-	border-radius: 1px;
+	border-radius: 3px;
 	padding: 5px;
 	margin-top: 10px;
 	margin-bottom: 15px;
@@ -175,7 +175,7 @@ button {
     background-size: cover;
     background-position: center center;
 }
-
+/*error handling*/
 .error_result {
 	text-align: center;
 	font-size: 22px;
