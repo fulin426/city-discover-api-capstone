@@ -1,3 +1,12 @@
+//check for undefined text
+function checkForUndefined(inputText) {
+  if (inputText === undefined) {
+    return '';
+  } else {
+    return inputText;
+  }
+}
+
 //Define global variables, functions, and objects
 const FOURSQUARE_SEARCH_URL = 'https://api.foursquare.com/v2/venues/explore';
 const OPENWEATHERMAP_SEARCH_URL = 'https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece';
@@ -14,7 +23,7 @@ function searchRecommendations(city, category) {
       v: 20180301,
       radius: 100000,
       venuePhotos: 1,
-      limit: 18
+      limit: 12
     },
     dataType: 'json',
     type: 'GET',
@@ -23,13 +32,13 @@ function searchRecommendations(city, category) {
                   let results = data.response.groups[0].items.map(function (item, index) {
                     return displayRecommendations(item);
                   });
-                  $('.results').html(results);
+                  $('.results').prop('hidden', false).html(results);
             } catch (e) {
                   $('.results').html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
             }
           },
           error: function() {
-            $('.results').html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
+            $('.results').prop('hidden', false).html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
           }
     };        
     $.ajax(settings);
@@ -47,10 +56,10 @@ function displayRecommendations(result) {
             <img class="venue_category_logo" src="${result.venue.categories[0].icon.prefix}bg_32${result.venue.categories[0].icon.suffix}" alt="category logo">
             <p class="venue_category_name">${result.venue.categories[0].shortName}</p>
           </div>
-          <p class="venue_address">${result.venue.location.formattedAddress[0]}</p>
-          <p class="venue_address">${result.venue.location.formattedAddress[1]}</p>
-          <p class="venue_address">${result.venue.location.formattedAddress[2]}</p>
-          <p class="venue_address">${result.venue.contact.formattedPhone}</p>
+          <p class="venue_address">${checkForUndefined(result.venue.location.formattedAddress[0])}</p>
+          <p class="venue_address">${checkForUndefined(result.venue.location.formattedAddress[1])}</p>
+          <p class="venue_address">${checkForUndefined(result.venue.location.formattedAddress[2])}</p>
+          <p class="venue_address">${checkForUndefined(result.venue.contact.formattedPhone)}</p>
         </div>
       </div>`;
 }
@@ -66,7 +75,7 @@ function searchWeather(city) {
     type: 'GET',
     success: function(data) {
               let results = displayWeather(data);
-              $('.weather_result').html(results);
+              $('.weather_result').prop('hidden', false).html(results);
             }
     };        
     $.ajax(settings);

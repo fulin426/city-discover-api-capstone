@@ -32,7 +32,7 @@ body {
 }
 /*heading section*/
 .header {
-	height: 60px;
+	height: 120px;
 	position: relative;
 	margin-top: 20px;
 	margin-bottom: 12px;
@@ -50,6 +50,9 @@ body {
 	font-size: 38px;
 }
 
+#intro {
+	font-size: 18px;
+}
 /*search bar section*/
 .searchbar {
 	text-align: center;
@@ -62,7 +65,7 @@ body {
 	border: solid grey 1px;
 	border-radius: 3px;
 	padding: 5px;
-	margin-top: 10px;
+	margin-top: 4px;
 	margin-bottom: 15px;
 }
 
@@ -122,12 +125,11 @@ button {
 /*results section*/
 
 .container_results{
+	height: 462px;
 	border: 1px solid grey;
 	border-radius: 4px;
 	padding: 12px;
-	overflow: hidden;
-   	white-space: nowrap;
-   	text-overflow: ellipsis;
+	overflow: auto;
 }
 
 .venue_name{
