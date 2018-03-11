@@ -23,7 +23,7 @@ function searchRecommendations(city, category) {
       v: 20180301,
       radius: 100000,
       venuePhotos: 1,
-      limit: 12
+      limit: 15
     },
     dataType: 'json',
     type: 'GET',

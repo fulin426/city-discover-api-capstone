@@ -34,7 +34,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-    background-size: contain, cover;
+    background-size: 100% 100%;
 }
 /*heading section*/
 .header {
@@ -196,7 +196,7 @@ button {
 /*error handling*/
 .error_result {
 	text-align: center;
-	font-size: 20px;
+	font-size: 16px;
 	margin: 15px;
 }
 
@@ -213,4 +213,8 @@ body {
 .container_results{
   height: 520px;
   overflow: auto;
+}
+
+.error_result {
+	color: white;
 }
