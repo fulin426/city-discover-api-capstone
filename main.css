@@ -51,11 +51,12 @@ body {
 }
 
 #city {
-	font-size: 38px;
+	font-size: 48px;
+	color: white;
 }
 
 .intro_container {
-	width: 354px;
+	width: 288px;
 	margin: 0 auto;
 	margin-top: 20px;
 
