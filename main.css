@@ -33,17 +33,10 @@ body {
 	url("https://raw.githubusercontent.com/fulin426/city-discover-api-capstone/master/images/Myguide.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-<<<<<<< HEAD
     background-position: center;
     background-size: cover !important;
-=======
-	background-position: center;
-	background-size: cover !important;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
->>>>>>> 672e0710be6567d2b90c62545615b139ec44ea73
 }
+
 /*heading section*/
 .header {
 	height: 120px;
@@ -67,6 +60,7 @@ body {
 	width: 288px;
 	margin: 0 auto;
 	margin-top: 20px;
+	text-align: center;
 
 }
 
