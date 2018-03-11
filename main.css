@@ -35,9 +35,6 @@ body {
 	background-attachment: fixed;
     background-position: center;
     background-size: cover !important;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
 }
 /*heading section*/
 .header {
@@ -55,7 +52,7 @@ body {
 
 #city {
 	font-size: 48px;
-	color: black;
+	color: white;
 }
 
 .intro_container {
@@ -216,11 +213,6 @@ body {
 
 body {
     background-size: cover;
-}
-
-#city {
-	font-size: 48px;
-	color: white;
 }
 
 .intro_container {
