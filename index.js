@@ -38,7 +38,7 @@ function searchRecommendations(city, category) {
             }
           },
           error: function() {
-            $('.results').prop('hidden', false).html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
+            $('.results').prop('hidden', false).html("<div class='error_result'><p>Sorry! No Results Found. Please try a different category or search a different city.</p></div>");
           }
     };        
     $.ajax(settings);
@@ -95,6 +95,7 @@ function displayWeather(data) {
 //Use global variables, functions, and objects (triggers)
 $('.food').on('click', function(event) {
 	event.preventDefault();
+  $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'food';
 	if (query === '') {alert('Please Enter a City')}
@@ -103,6 +104,7 @@ $('.food').on('click', function(event) {
 
 $('.sights').on('click', function(event) {
 	event.preventDefault();
+  $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'sights';
 	if (query === '') {alert('Please Enter a City')}
@@ -111,6 +113,7 @@ $('.sights').on('click', function(event) {
 
 $('.shops').on('click', function(event) {
 	event.preventDefault();
+  $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'shops';
 	if (query === '') {alert('Please Enter a City')}
