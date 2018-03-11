@@ -29,6 +29,12 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	background-color: #F8F8F8;
+	background-image: 
+	url("https://raw.githubusercontent.com/fulin426/city-discover-api-capstone/master/images/Myguide.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 /*heading section*/
 .header {
@@ -57,6 +63,7 @@ body {
 
 #intro {
 	font-size: 16px;
+	color: white;
 }
 /*search bar section*/
 .searchbar {
@@ -135,6 +142,7 @@ button {
 	border-radius: 4px;
 	padding: 12px;
 	overflow: auto;
+	background: #F5F5F5;
 }
 
 .venue_name{
@@ -196,6 +204,6 @@ button {
 }
 
 .container_results{
-  height: 508px;
+  height: 480px;
   overflow: auto;
 }
