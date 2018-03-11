@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
 	box-sizing: border-box;
 	font-family: Sans-Serif;
 	/*reset Chrome user agent styles*/
@@ -33,8 +33,8 @@ body {
 	url("https://raw.githubusercontent.com/fulin426/city-discover-api-capstone/master/images/Myguide.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: center;
-    background-size: cover !important;
+	background-position: center;
+	background-size: cover !important;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -188,13 +188,13 @@ button {
 }
 
 .result-image {
-    width: 100%;
-    float: left;
-    height: 15em;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-size: cover;
-    background-position: center center;
+	width: 100%;
+	float: left;
+	height: 15em;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-size: cover;
+	background-position: center center;
 }
 /*error handling*/
 .error_result {
@@ -208,8 +208,8 @@ body {
 	background: url("https://raw.githubusercontent.com/fulin426/city-discover-api-capstone/master/images/Myguide.png") 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-    background-position: center;
-    background-size: 320px auto;
+	background-position: center;
+	background-size: 320px auto;
 }*/
 
 @media only screen and (min-width: 640px) {
