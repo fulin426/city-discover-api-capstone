@@ -34,7 +34,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover !important;
 }
 /*heading section*/
 .header {
@@ -52,7 +52,7 @@ body {
 
 #city {
 	font-size: 48px;
-	color: white;
+	color: black;
 }
 
 .intro_container {
@@ -213,6 +213,11 @@ body {
 
 body {
     background-size: cover;
+}
+
+#city {
+	font-size: 48px;
+	color: white;
 }
 
 .intro_container {
