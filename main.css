@@ -34,8 +34,6 @@ body {
 .header {
 	height: 120px;
 	position: relative;
-	margin-top: 20px;
-	margin-bottom: 12px;
 }
 
 .header-content {
@@ -114,6 +112,7 @@ button {
 }
 
 #weather_description {
+
 }
 
 .temp_result {
