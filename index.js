@@ -103,6 +103,7 @@ function displayWeather(data) {
 //Use global variables, functions, and objects (triggers)
 $('.food').on('click', function(event) {
 	event.preventDefault();
+  $('.space_holder').remove();
   $('.weather_result').empty();
   $('.intro_container').remove();
 	let query = $('#search-input').val();
@@ -113,6 +114,7 @@ $('.food').on('click', function(event) {
 
 $('.sights').on('click', function(event) {
 	event.preventDefault();
+  $('.space_holder').remove();
   $('.weather_result').empty();
   $('.intro_container').remove();
 	let query = $('#search-input').val();
@@ -123,6 +125,7 @@ $('.sights').on('click', function(event) {
 
 $('.shops').on('click', function(event) {
 	event.preventDefault();
+  $('.space_holder').remove();
   $('.weather_result').empty();
   $('.intro_container').remove();
 	let query = $('#search-input').val();
