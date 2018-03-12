@@ -8,7 +8,7 @@
     <link href="grid.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-  	<header class="row">
+  	<header class="row" role="banner">
   		<div class="col-12 header">
   			<div class="header-content">
 	  			<h1 id="city">City Discover</h1>
@@ -17,8 +17,8 @@
   	</header>
   	<div class="row">
 	  	<div class="col-12 searchbar">
-		  	<form>
-			  	<input id="search-input" role="textbox" placeholder="Search City.." type="text" name="search">
+		  	<form role="form">
+			  	<input id="search-input" role="search" placeholder="Search City.." type="text" name="search">
 			  	<div class="buttons">
 				  	<button class="food">Food</button>
 				  	<button class="sights">Sights</button>
@@ -32,14 +32,13 @@
     </div>
   	<div class="row">
   		<div class="col-12 weather">
-  			<div class="weather_result" aria-live="assertive" hidden>
-
-  			</div>
   		</div>
   	</div>
-  	<div class="row results" aria-live="assertive" hidden>
+  	<div class="row results" role="main" aria-live="assertive" hidden>
 
   	</div>	
+    <footer role="contactinfo">
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="index.js"></script>
   </body>

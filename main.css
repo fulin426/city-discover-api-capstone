@@ -114,8 +114,10 @@ button {
 	border-radius: 4px;
 	display: inline-block;
 	width: 180px;
+	height: 135px;
 	text-align: center;
 	background-color: white;
+	margin: 0 auto;
 }
 
 .daily {

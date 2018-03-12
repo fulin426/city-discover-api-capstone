@@ -33,14 +33,14 @@ function searchRecommendations(city, category) {
                     return displayRecommendations(item);
                   });
                   $('.results').prop('hidden', false).html(results);
-            } catch (e) {
-                  $('.results').html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
-            }
-          },
-          error: function() {
-            $('.results').prop('hidden', false).html("<div class='error_result'><p>Sorry! No Results Found. Please try a different category or search a different city.</p></div>");
-          }
-    };        
+                  } catch (e) {
+                    $('.results').html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
+                    }
+                  },
+                  error: function() {
+                    $('.results').prop('hidden', false).html("<div class='error_result'><p>Sorry! No Results Found. Please try a different category or search a different city</p></div>");
+                 }
+              };        
     $.ajax(settings);
 }
 
@@ -74,27 +74,37 @@ function searchWeather(city) {
     dataType: 'json',
     type: 'GET',
     success: function(data) {
+              try {
               let results = displayWeather(data);
-              $('.weather_result').prop('hidden', false).html(results);
-            }
-    };        
+              $('.weather').prop('hidden', false).html(results);
+            } catch (e) {
+              $('.weather').html("<div class='error_result'><p>Sorry! No weather results found</p></div>");
+              }
+            },
+            error: function() {
+              $('.weather').prop('hidden', false).html("<div class='error_result'><p>Sorry! No weather results found</p></div>");
+              }
+            };        
     $.ajax(settings);
 }
 function displayWeather(data) {
   return `
+      <div class="weather_result" aria-live="assertive" hidden>
             <h3 id="weather_title">${data.name}</h3>
             <img class="weather_logo" src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="weather.png">
             <p id="temp_max" class ="temp_result">${Math.round(data.main.temp_max)}°F</p>
             <p id="temp_min" class ="temp_result">${Math.round(data.main.temp_min)}°F</p> 
             <p  id="weather_description">${data.weather[0].main}</p>
+          </div>
         </div>
-      </div>`;
+      </div>   `;
 }
 
 
 //Use global variables, functions, and objects (triggers)
 $('.food').on('click', function(event) {
 	event.preventDefault();
+  $('.weather_result').empty();
   $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'food';
@@ -104,6 +114,7 @@ $('.food').on('click', function(event) {
 
 $('.sights').on('click', function(event) {
 	event.preventDefault();
+  $('.weather_result').empty();
   $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'sights';
@@ -113,6 +124,7 @@ $('.sights').on('click', function(event) {
 
 $('.shops').on('click', function(event) {
 	event.preventDefault();
+  $('.weather_result').empty();
   $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'shops';
