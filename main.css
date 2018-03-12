@@ -61,7 +61,6 @@ body {
 	margin: 0 auto;
 	margin-top: 20px;
 	text-align: center;
-
 }
 
 #intro {
@@ -141,13 +140,14 @@ button {
 .temp_result {
 	margin: 5px;
 }
+
 #temp_min {
 	color: #808080;
 }
 /*results section*/
 
 .space_holder {
- 	height: 115px;
+ 	height: 108px;
  	display: block;
 }
 
@@ -245,12 +245,12 @@ body
 }
 
 .container_results{
- 	height: 508px;
+ 	height: 480px;
   	overflow: auto;
 }
 
 .space_holder {
- 	height: 425px;
+ 	height: 435px;
  }
 
 .error_result {
