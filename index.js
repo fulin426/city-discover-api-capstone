@@ -34,7 +34,7 @@ function searchRecommendations(city, category) {
               };        
     $.ajax(settings);
 }
-
+//In cases where API returns undefined results
 function checkForUndefined(inputText) {
   if (inputText === undefined) {
     return '';
@@ -86,6 +86,7 @@ function searchWeather(city) {
             };        
     $.ajax(settings);
 }
+
 function displayWeather(data) {
   return `
       <div class="weather_result" aria-live="assertive" hidden>
@@ -98,7 +99,6 @@ function displayWeather(data) {
         </div>
       </div>   `;
 }
-
 
 //Use global variables, functions, and objects (triggers)
 $('.food').on('click', function(event) {
