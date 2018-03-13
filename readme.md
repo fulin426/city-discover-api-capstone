@@ -21,7 +21,7 @@ As a vistor I want to search by a city name in order to find out the weather, fo
 You can access a working prototype of the app here: (https://fulin426.github.io/city-discover-api-capstone)
 
 ## Functionality
-The app's functionality includes: Type in city of interest for recommendations. Tab through foods, sights, and shops. Return current weather information. 
+The app's functionality includes: generates recommendations based on city location, tabs through three different categories, and returns current weather conditons. 
 
 
 ## Technology
