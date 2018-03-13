@@ -101,37 +101,47 @@ function displayWeather(data) {
 }
 
 //Use global variables, functions, and objects (triggers)
-$('.food').on('click', function(event) {
-	event.preventDefault();
+function removeItemsAfterClick() {
   $('.space_holder').remove();
   $('.weather_result').empty();
   $('.intro_container').remove();
+}
+
+$('.food').on('click', function(event) {
+	event.preventDefault();
 	let query = $('#search-input').val();
   let category = 'food';
-	if (query === '') {alert('Please Enter a City')}
-		else {searchRecommendations(query, category); searchWeather(query)}
+	if (query === '') {
+    alert('Please Enter a City');
+  } else {
+      removeItemsAfterClick();
+      searchRecommendations(query, category); 
+      searchWeather(query);
+    }
 });
 
 $('.sights').on('click', function(event) {
 	event.preventDefault();
-  $('.space_holder').remove();
-  $('.weather_result').empty();
-  $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'sights';
-	if (query === '') {alert('Please Enter a City')}
-		else {searchRecommendations(query, category); searchWeather(query)}
+	if (query === '') {
+    alert('Please Enter a City')
+  } else {
+      removeItemsAfterClick();
+      searchRecommendations(query, category); 
+      searchWeather(query);
+    }
 });
 
 $('.shops').on('click', function(event) {
 	event.preventDefault();
-  $('.space_holder').remove();
-  $('.weather_result').empty();
-  $('.intro_container').remove();
 	let query = $('#search-input').val();
   let category = 'shops';
-	if (query === '') {alert('Please Enter a City')}
-		else {searchRecommendations(query, category); searchWeather(query)}
+	if (query === '') {
+    alert('Please Enter a City')
+  } else {
+      removeItemsAfterClick();
+      searchRecommendations(query, category); 
+      searchWeather(query);
+    }
 });
-
-
