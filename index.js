@@ -107,7 +107,7 @@ function removeItemsAfterClick() {
   $('.intro_container').remove();
 }
 
-$('.food').on('click', function(event) {
+$('#food').on('click', function(event) {
 	event.preventDefault();
 	let query = $('#search-input').val();
   let category = 'food';
@@ -120,7 +120,7 @@ $('.food').on('click', function(event) {
     }
 });
 
-$('.sights').on('click', function(event) {
+$('#sights').on('click', function(event) {
 	event.preventDefault();
 	let query = $('#search-input').val();
   let category = 'sights';
@@ -133,7 +133,7 @@ $('.sights').on('click', function(event) {
     }
 });
 
-$('.shops').on('click', function(event) {
+$('#shops').on('click', function(event) {
 	event.preventDefault();
 	let query = $('#search-input').val();
   let category = 'shops';
@@ -145,3 +145,17 @@ $('.shops').on('click', function(event) {
       searchWeather(query);
     }
 });
+
+function clickOnButton() {
+  $('button').on('click', function() {
+    let query = $('#search-input').val();
+    if (query === '') {
+      return;
+    } else {
+      $('button').removeClass('selected_button');
+      $(this).addClass('selected_button');
+      }
+  });
+}
+
+$(clickOnButton);

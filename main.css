@@ -102,6 +102,10 @@ button {
 	cursor:pointer;
 }
 
+.selected_button {
+	background-color: #008000;
+}
+
 .buttons {
 	display: block
 }
