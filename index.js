@@ -12,9 +12,9 @@ function searchRecommendations(city, category) {
       near: `${city}`,
       section: `${category}`,
       v: 20180301,
-      radius: 100000,
+      /*radius: 20000,*/
       venuePhotos: 1,
-      limit: 18
+      limit: 21
     },
     dataType: 'json',
     type: 'GET',
