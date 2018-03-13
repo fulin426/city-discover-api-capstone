@@ -4,6 +4,8 @@ Thinkful (https://www.thinkful.com) First Capstone Project - App integrating Fou
 ## Screenshots 
 ![Screenshots](https://raw.githubusercontent.com/fulin426/city-discover-api-capstone/master/images/landingPage.png)
 
+![Screenshots](https://raw.githubusercontent.com/fulin426/city-discover-api-capstone/master/images/resultsScreenshot.png)
+
 ## Background
 When I'm traveling to a new city the typical things I look for are local foods, sights, and shopping areas. I also would like to know the current weather conditions before going out to explore. 
 
