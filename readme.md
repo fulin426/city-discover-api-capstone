@@ -1,7 +1,8 @@
 # City-Discover-API-Capstone
 Thinkful (https://www.thinkful.com) First Capstone Project - App integrating Foursquare and OpenWeatherMap API
 
-<!-- ![landing page] (https://github.com/kimcheru18/coffee-search-wikipedia-api-capstone/blob/master/github_images/screenshot_landing_page.png) -->
+## Screenshots 
+![Screenshots](https://raw.githubusercontent.com/fulin426/city-discover-api-capstone/master/images/landingPage.png)
 
 ## Background
 When I'm traveling to a new city the typical things I look for are local foods, sights, and shopping areas. I also would like to know the current weather conditions before going out to explore. 
