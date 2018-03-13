@@ -30,8 +30,8 @@ The app's functionality includes: Type in city of interest for recommendations. 
 * JavaScript
 * jQuery
 
-The app uses AJAX JSON calls to the <a href="https://api.foursquare.com/v2/venues/explore">Foursquare</a>Open Platform API to return recommendations.
-The app uses AJAX JSON calls to the <a href="https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece">Wiki Trivia</a>Open Platform API to return weather results
+The app uses AJAX JSON calls to the <a href="https://api.foursquare.com/v2/venues/explore">Foursquare</a> Open Platform API to return recommendations based on city location.
+The app uses AJAX JSON calls to the <a href="https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=ac32d19346bf21abaa933d02472c8ece">OpenWeatherMap</a> Open Platform API to return weather results
 
 ## Responsive
 App is built to be responsive across mobile, tablet, laptop, and desktop screen resolutions.
