@@ -12,7 +12,6 @@ function searchRecommendations(city, category) {
       near: `${city}`,
       section: `${category}`,
       v: 20180301,
-      /*radius: 20000,*/
       venuePhotos: 1,
       limit: 21
     },
