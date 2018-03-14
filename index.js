@@ -99,14 +99,28 @@ function displayWeather(data) {
         </div>
       </div>   `;
 }
+//Toggles button colors once clicked
+function clickOnButton() {
+  $('button').on('click', function() {
+    let query = $('#search-input').val();
+    if (query === '') {
+      return;
+    } else {
+      $('button').removeClass('selected_button');
+      $(this).addClass('selected_button');
+      }
+  });
+}
 
-//Use global variables, functions, and objects (triggers)
+$(clickOnButton);
+
 function removeItemsAfterClick() {
   $('.space_holder').remove();
   $('.weather_result').empty();
   $('.intro_container').remove();
 }
 
+//Use global variables, functions, and objects (triggers)
 $('#food').on('click', function(event) {
 	event.preventDefault();
 	let query = $('#search-input').val();
@@ -146,16 +160,3 @@ $('#shops').on('click', function(event) {
     }
 });
 
-function clickOnButton() {
-  $('button').on('click', function() {
-    let query = $('#search-input').val();
-    if (query === '') {
-      return;
-    } else {
-      $('button').removeClass('selected_button');
-      $(this).addClass('selected_button');
-      }
-  });
-}
-
-$(clickOnButton);
