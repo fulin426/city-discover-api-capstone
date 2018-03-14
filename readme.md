@@ -39,5 +39,5 @@ App is built to be responsive across mobile, tablet, laptop, and desktop screen 
 
 <!-- ## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
-* AutoComplete
+* AutoComplete for search
 * GoogleMaps Api  -->
