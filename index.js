@@ -24,7 +24,7 @@ function searchRecommendations(city, category) {
                   });
                   $('.results').prop('hidden', false).html(results);
                   } catch (e) {
-                    $('.results').html("<div class='error_result'><p>Sorry! No Results Found</p></div>");
+                    $('.results').html("<div class='error_result'><p>Sorry! No Results Found. Please try a different category or search a different city</p></div>");
                     }
                   },
                   error: function() {
@@ -158,4 +158,12 @@ $('#shops').on('click', function(event) {
       searchWeather(query);
     }
 });
+
+function activatePlacesSearch() {
+    let options = {
+        types: ['(regions)']
+    };
+    let input = document.getElementById('search-input');
+    let autocomplete = new google.maps.places.Autocomplete(input, options);
+}
 
