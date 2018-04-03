@@ -13,7 +13,7 @@ function searchRecommendations(city, category) {
       section: `${category}`,
       v: 20180301,
       venuePhotos: 1,
-      limit: 21
+      limit: 27
     },
     dataType: 'json',
     type: 'GET',
